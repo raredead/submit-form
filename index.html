@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Send form</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,23 +15,23 @@
                 <h1 class="form__title">Отправка данных на форму</h1>
                 <div class="form__item">
                     <label for="formName" class="form__label">Имя*:</label>
-                    <input id="formName" type="text" name="name" class="form__input">
+                    <input id="formName" type="text" name="name" class="form__input _req">
                 </div>
                 <div class="form__item">
                     <label for="formEmail" class="form__label">E-mail*:</label>
-                    <input id="formEmail" type="text" name="name" class="form__input">
+                    <input id="formEmail" type="text" name="name" class="form__input _req _email">
                 </div>
                 <div class="form__item">
                     <div class="form__label">Пол:</div>
                     <div class="options">
                         <div class="options__item">
                             <input id="formSexMale" checked type="radio" value="male" name="sex" class="options__input">
-                            <label for="formSexMale" class="options__label">Мужской</label>
+                            <label for="formSexMale" class="options__label"><span>Мужской</span></label>
                         </div>
                         <div class="options">
                             <div class="options__item">
                                 <input id="formSexFemale" type="radio" value="female" name="sex" class="options__input">
-                                <label for="formSexFemale" class="options__label">Женский</label>
+                                <label for="formSexFemale" class="options__label"><span>Женский</span></label>
                             </div>
                         </div>
                     </div>
@@ -58,7 +59,7 @@
                     </div>
                     <div class="form__item">
                         <div class="checkbox">
-                            <input type="checkbox" name="agreement" class="checkbox__input">
+                            <input type="checkbox" name="agreement" class="checkbox__input _req">
                             <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обратку персональных данных</span></label>
                         </div>
                     </div>
